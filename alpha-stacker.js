@@ -11,15 +11,12 @@
 var alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 function stackLetters() {
   var letters = "";
-  var spaces = "";
-  for (var i = 0; i < alphabet.length; i++) {
-    letters += alphabet[i];
-    spaces = letters.replace(/\s/g, "");
-    if (spaces.length % 3 === 0) {
+  
+  for (var counter = 0; counter < alphabet.length; counter++) {
+    if (counter % 3 === 0) {
       letters += " ";
-    }  {
+    } letters += alphabet[counter]; 
       console.log(letters);
     }
   }
-} 
-stackLetters();
+stackLetters(alphabet);
